@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 /*
 	Dimension by HTML5 UP
@@ -1644,14 +1644,7 @@ body.is-preload #header .content .inner {
   position: relative;
   width: 40rem;
   max-width: 100%;
-  background: linear-gradient(
-    -45deg,
-    #8da4cd,
-    #5c7db3,
-    #6f92bf,
-    #8da4cd,
-    #5c7db3
-  );
+  background: linear-gradient(-45deg, #05143b, #246a9d, #081b3c);
   border-radius: 4px;
   opacity: 0;
 }
