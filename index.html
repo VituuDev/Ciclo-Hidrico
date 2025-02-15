@@ -44,7 +44,6 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#intro">Login</a></li>
             <li><a href="#work">Água</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#contact">Contato</a></li>
@@ -54,53 +53,7 @@
       </header>
 
       <!-- Main -->
-      <div id="main" >
-        <!-- Login -->
-        <article id="intro">
-          
-          <!--criação do header do form-->
-    <div id="form" class="form">
-      <form id="registrationForm" onsubmit="return validate(event)">
-      <div class="header">
-        <h2 class="major">Cadastre-se</h2>
-        <!--O seguinte botao serve para conferir a validação dos inputs-->
-        <button id="submitButton" class="buttonheader" type="submit">
-          Cadastrar usuário
-        </button>
-        
-        </div>
-        <!--primeiro input é o do nome-->
-        <div class="input-group">
-          <div class="linha1">
-            <div class="alinhar">
-              <label for="firstname">Primeiro nome</label>
-              <input id="n" type="text" class="input" placeholder="Primeiro nome"
-                title="Insira seu primeiro nome."/>
-                <small id="error-n"></small>
-            </div>
-           
-            </div>
-          </div>
-            <div class="linha2">
-              <div class="alinhar">
-                <!--input do email-->
-                <label for="email">E-mail</label>
-                <input id="email" type="email" class="input" placeholder="Digite seu e-mail"/>
-                <small id="error-email"></small>
-              </div>
-                <div class="alinhar">
-                  <!--input da senha-->
-                  <label for="senha">Senha</label>
-                  <input id="password" type="password" class="input" placeholder="Digite sua senha"
-                   />
-                    <small id="error-password"></small>
-                  </div>
-                  
-           <!-- botão desabilitado, até a validação do formulário acontecer, depois de validado o botao é habilitado e permite o usuário entrar na outra página -->
-<button id="newButton" disabled onclick="redirectToNewPage()"><p>Entrar</p></button>
-          </div>
-        </article>
-
+      <div id="main">
         <!-- Água -->
         <article id="work" class="bloqueado">
           <h2 class="major">Estudo do ciclo da água</h2>
@@ -125,9 +78,11 @@
         </article>
 
         <!-- Sobre -->
-        <article id="about" class="bloqueado" >
+        <article id="about" class="bloqueado">
           <h2 class="major">About</h2>
-          <span class="image main"><img src="./images/pic03.jpg" alt="" /></span>
+          <span class="image main"
+            ><img src="./images/pic03.jpg" alt=""
+          /></span>
           <p>
             Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
             eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
