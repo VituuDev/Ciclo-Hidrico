@@ -1,0 +1,14 @@
+.error{
+    background-color: #f44336; /* Cor de fundo (vermelho) */
+  color: white; /* Cor do texto */
+  border: none; /* Remove borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  text-decoration: none; /* Remove o sublinhado */
+  display: inline-block; /* Faz o botão se comportar como um bloco, mas em linha */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Muda o cursor para indicar um clique */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}

@@ -83,71 +83,7 @@
     }, 3000); // Remove após 3 segundos
   }
 
-  function validate() {
-    let isValid = true;
-    let errorMessages = [];
-
-    // Pegando os valores dos inputs
-    let name = document.getElementById("n").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let password = document.getElementById("password").value.trim();
-
-    // Pegando os campos de erro
-    let errorName = document.getElementById("error-n");
-    let errorEmail = document.getElementById("error-email");
-    let errorPassword = document.getElementById("error-password");
-    document.getElementById("error-general").textContent = "";
-
-    
-
-    // Verifica se todos os campos estão vazios
-    if (name === "" && email === "" && password === "") {
-      showAlert("Por favor, preencha pelo menos um campo!");
-      isValid = false;
-    } else {
-      // Validação do nome
-      if (name === "") {
-        errorName.innerText = "O nome é obrigatório.";
-        errorMessages.push("O nome é obrigatório.");
-        isValid = false;
-      }
-
-      // Validação do e-mail
-      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (email !== "" && !emailPattern.test(email)) {
-        errorEmail.innerText = "Insira um e-mail válido.";
-        errorMessages.push("Insira um e-mail válido.");
-        isValid = false;
-      }
-
-      // Validação da senha (mínimo 6 caracteres)
-      if (password !== "" && password.length < 6) {
-        errorPassword.innerText = "A senha deve ter pelo menos 6 caracteres.";
-        errorMessages.push("A senha deve ter pelo menos 6 caracteres.");
-        isValid = false;
-      }
-    }
-
-    //Se houver erros, exibir alerta
-    if (!isValid) {
-      showAlert(errorMessages.joing("\n"));
-    }
-
-    // Se todas as validações passarem, habilita o botão "Entrar"
-    document.getElementById("newButton").disabled = !isValid;
-  }
-
-  // Envio do formulário apenas ao clicar no botão "Entrar"
-  document
-    .getElementById("registrationForm")
-    .addEventListener("submit", function (event) {
-      event.preventDefault(); // Evita envio automático
-
-      if (!document.getElementById("newButton").disabled) {
-        alert("Cadastro realizado com sucesso!");
-        window.location.href = "home.html"; 
-      }
-    });
+  
 
   // Methods.
   $main._show = function (id, initial) {
